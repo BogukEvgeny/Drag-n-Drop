@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    margin: 0;
+    padding-top: 5rem;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.col-header {
+    width: 150px;
+    box-shadow: 4px 4px 9px rgb(41, 41, 41, 0.36);
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    color: black;
+}
+
+.item {
+    width: 150px;
+    height: 66px;
+    border: 1px solid #eee;
+    box-shadow: 4px 4px 4px rgb(41, 41, 41, 0.36);
+    border-radius: 20px;
+    background-color: #f7f6f7;
+    padding: 0.8rem 1rem;
+    color: black;
+    text-align: center;
+    cursor: grab;
+    margin: 1rem 0;
+}
+
+.item.active {
+    cursor: grabbing;
+}
+
+.placeholder {
+    width: 150px;
+    height: 66px;
+}
+
+.start {
+    background: linear-gradient(90deg, #f7ff85 40%, #209cff 80%);
+}
+
+.progress { 
+    background: linear-gradient(90deg, #209cff 40%, #71f057 80%);
+}
+
+.done {
+    background: linear-gradient(90deg, #71f057 40%, #f7ff85 80%);
+}
+
+.button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    margin: 0;
+}
+
+.hold {
+    border: 5px solid #eee;
+}
+
+.hide{
+    display: none;
+}
+
+.hovered {
+    border-top: 20px solid #8ed7ed;
+    margin: 0;
+}
